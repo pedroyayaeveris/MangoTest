@@ -31,14 +31,14 @@ public class Main {
         buyProductsList.add(p3);
         buyProductsList.add(p4);
 
-        List<Product> dataBaseList = dataBase.getDatabaseProductList();
+
 
         cart.setProductList(buyProductsList);
 
         user.setCart(cart);
 
         Controller controller = new Controller();
-        controller.checkAvailability(buyProductsList, dataBaseList);
+        controller.checkAvailability(buyProductsList);
 
         
 

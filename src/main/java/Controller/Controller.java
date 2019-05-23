@@ -11,7 +11,7 @@ public class Controller {
 
     Payment payment = new Payment();
 
-    public void checkAvailability(List<Product> listToBuy, List<Product> dataBaseList){
+    public void checkAvailability(List<Product> listToBuy){
         Boolean success = null;
         List<Product> missingProducts = new ArrayList<>();
         for (Product product:listToBuy) {
